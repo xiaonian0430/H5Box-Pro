@@ -37,7 +37,7 @@
 		{
 			"path": "pages/tabBar/template/template",
 			"style": {
-				"navigationBarTitleText": "模版",
+				"navigationBarTitleText": "多个异常视频测试",
 				"app-plus": {
 					"titleNView": {
 						"buttons": [{
@@ -1175,19 +1175,19 @@
 		"backgroundColor": "#F8F8F8",
 		"list": [{
 				"pagePath": "pages/tabBar/component/component",
-				"iconPath": "static/component.png",
-				"selectedIconPath": "static/componentHL.png",
+				"iconPath": "static/template.png",
+				"selectedIconPath": "static/templateHL.png",
 				"text": "测试1"
 			},
 			{
 				"pagePath": "pages/tabBar/API/API",
-				"iconPath": "static/api.png",
-				"selectedIconPath": "static/apiHL.png",
+				"iconPath": "static/template.png",
+				"selectedIconPath": "static/templateHL.png",
 				"text": "测试2"
 			}, /*{
 				"pagePath": "pages/tabBar/extUI/extUI",
-				"iconPath": "static/extui.png",
-				"selectedIconPath": "static/extuiHL.png",
+				"iconPath": "static/template.png",
+				"selectedIconPath": "static/templateHL.png",
 				"text": "扩展组件"
 			}, */{
 				"pagePath": "pages/tabBar/template/template",

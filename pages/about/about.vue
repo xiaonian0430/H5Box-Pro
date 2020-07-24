@@ -2,23 +2,27 @@
 	<view class="about">
 		<view class="content">
 			<view class="qrcode">
-				<image src="https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/app_download.png" @longtap="save"></image>
-				<text class="tip">扫码体验uni-app</text>
+				<image src="/static/side_ewm.jpg" @longtap="save"></image>
+				<text class="tip">扫码联系客服</text>
 			</view>
 			<view class="desc">
-				<text class="code">uni-app</text>
-				是一个使用 <text class="code">Vue.js</text> 开发跨平台应用的前端框架。
+				<text class="code">北京讯鸟软件有限公司</text>
+				创立于2001年，是中国领先的全渠道智能云客服系统解决方案提供商。
 			</view>
 			<view class="source">
-				<view class="title">本示例源码获取方式：</view>
+				<view class="title">相关信息</view>
 				<view class="source-list">
 					<view class="source-cell">
-						<text space="nbsp">1. </text>
-						<text>下载 HBuilderX，新建 uni-app 项目时选择 <text class="code">Hello uni-app</text> 模板。</text>
+						<text>电话：</text>
+						<text>4007072008</text>
 					</view>
 					<view class="source-cell">
-						<text space="nbsp">2. </text>
-						<u-link class="link" :href="'https://github.com/dcloudio/hello-uniapp'" :text="'https://github.com/dcloudio/hello-uniapp'"></u-link>
+						<text>邮编：</text>
+						<text>100102</text>
+					</view>
+					<view class="source-cell">
+						<text space="nbsp">网址：</text>
+						<u-link class="link" :href="'http://www.infobird.com/'" :text="'http://www.infobird.com/'"></u-link>
 					</view>
 				</view>
 			</view>
