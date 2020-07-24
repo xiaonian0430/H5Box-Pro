@@ -3,7 +3,7 @@
     "appid" : "__UNI__2342ED0",
     "description" : "应用描述",
     "versionName" : "1.0.2",
-    "versionCode" : "102s",
+    "versionCode" : 102,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {

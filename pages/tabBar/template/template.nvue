@@ -4,8 +4,9 @@
 			<image class="uni-header-image" src="/static/templateIndex.png"></image>
 		</view>
 		<view class="uni-hello-text">
-			<text class="hello-text">以下是部分模板示例，更多模板见插件市场：</text>
-			<u-link class="hello-link" href="https://ext.dcloud.net.cn" :text="'https://ext.dcloud.net.cn'" :inWhiteList="true"></u-link>
+			<text class="hello-text">讯鸟软件是智能云客服市场领导者</text>
+			<u-link class="hello-link" :href="'http://www.infobird.com/'" :text="'http://www.infobird.com/'"
+			    :inWhiteList="true"></u-link>
 		</view>
 		<view class="uni-panel" v-for="(item, index) in list" :key="item.id">
 			<view class="uni-panel-h" :class="item.open ? 'uni-panel-h-on' : ''" @click="triggerCollapse(index)">
@@ -30,6 +31,7 @@
 		data() {
 			return {
 				list: [
+					/*
 					// #ifdef APP-PLUS || H5 || MP-ALIPAY
 					{
 						id: 'navbar',
@@ -89,12 +91,14 @@
 						url: 'list2detail-list'
 					},
 					// #endif
+					*/
 					// #ifdef APP-PLUS || H5 || MP-WEIXIN  || MP-QQ
 					{
 						name: '上下滑动切换视频',
 						url: 'swiper-vertical'
 					},
 					// #endif
+					/*
                     // #ifdef APP-NVUE
 					{
 						name: 'swiper-list',
@@ -121,6 +125,7 @@
 					    url: 'vant-button'
 					}
 					// #endif
+					*/
 				],
 				navigateFlag: false
 			}

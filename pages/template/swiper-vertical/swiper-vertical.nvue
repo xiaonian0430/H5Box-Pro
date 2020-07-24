@@ -1,5 +1,6 @@
 <template>
     <view class="page">
+		<page-head :title="title"></page-head>
         <swiper class="swiper" :circular="circular" :vertical="true" @change="onSwiperChange">
             <swiper-item v-for="item in videoList" :key="item.id">
                 <video class="video" :id="item.id" :ref="item.id" :src="item.src" :controls="false" :loop="true"
@@ -10,16 +11,16 @@
 </template>
 <script>
     const videoData = [{
-            src: 'https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/hellouniapp/hello-nvue-swiper-vertical-01.mp4'
+            src: 'https://xnall.oss-cn-hangzhou.aliyuncs.com/ets-course-app/dev/2020-07-18%2017:31:29:009/movie.mp4'
         },
         {
-            src: 'https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/hellouniapp/hello-nvue-swiper-vertical-02.mp4'
+            src: 'https://xnall.oss-cn-hangzhou.aliyuncs.com/ets-course-app/dev/20200721/ios_15_51_28_781_movie.mp4'
         },
         {
-            src: 'https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/hellouniapp/hello-nvue-swiper-vertical-03.mp4'
+            src: 'https://xnall.oss-cn-hangzhou.aliyuncs.com/ets-course-app/dev/2020-07-20%2015:16:19:756/movie.mp4'
         },
         {
-            src: 'https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/hellouniapp/hello-nvue-swiper-vertical-01.mp4'
+            src: 'https://xnall.oss-cn-hangzhou.aliyuncs.com/ets-course-app/dev/20200721/ios_10_27_13_057_movie.mp4'
         },
         {
             src: 'https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/hellouniapp/hello-nvue-swiper-vertical-02.mp4'
@@ -32,6 +33,7 @@
     export default {
         data() {
             return {
+				title: '上下滑动切换视频',
                 circular: true,
                 videoList: [{
                         id: "video0",

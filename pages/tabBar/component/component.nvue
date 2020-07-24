@@ -4,8 +4,8 @@
             <image class="uni-header-image" src="/static/componentIndex.png"></image>
         </view>
         <view class="uni-hello-text">
-            <text class="hello-text">uni-app内置组件，展示样式仅供参考，文档详见：</text>
-            <u-link class="hello-link" :href="'https://uniapp.dcloud.io/component/'" :text="'https://uniapp.dcloud.io/component/'"
+            <text class="hello-text">讯鸟软件是智能云客服市场领导者</text>
+            <u-link class="hello-link" :href="'http://www.infobird.com/'" :text="'http://www.infobird.com/'"
                 :inWhiteList="true"></u-link>
         </view>
         <view class="uni-panel" v-for="(item, index) in list" :key="item.id">
@@ -39,7 +39,7 @@
         },
         data() {
             return {
-                list: [{
+                list: [/*{
                         id: 'view',
                         name: '视图容器',
                         open: false,
@@ -74,7 +74,7 @@
                         name: '导航',
                         open: false,
                         pages: ['navigator']
-                    }, {
+                    }, */{
                         id: 'media',
                         name: '媒体组件',
                         open: false,
@@ -86,6 +86,7 @@
                             // #endif
                         ],
                     },
+					/*
                     // #ifndef MP-TOUTIAO
                     {
                         id: 'map',
@@ -103,6 +104,7 @@
                         pages: ['canvas']
                     },
 					// #endif
+					*/
                     // #ifdef APP-PLUS || H5
                     {
                         id: 'web-view',
@@ -125,6 +127,7 @@
                         pages: ['web-view']
                     },
                     // #endif
+					/*
                     // #ifndef H5 || MP-BAIDU || QUICKAPP-WEBVIEW
                     {
                         url: 'ad',
@@ -132,6 +135,7 @@
                         open: false
                     },
                     // #endif
+					*/
                 ],
                 navigateFlag: false
             }

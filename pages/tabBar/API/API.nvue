@@ -8,8 +8,8 @@
                 <image class="uni-header-image" src="/static/apiIndex.png"></image>
             </view>
             <view class="uni-hello-text">
-                <text class="hello-text">以下将演示uni-app接口能力，详细文档见：</text>
-                <u-link class="hello-link" :href="'https://uniapp.dcloud.io/api/'" :text="'https://uniapp.dcloud.io/api/'"
+                <text class="hello-text">讯鸟软件是智能云客服市场领导者</text>
+                <u-link class="hello-link" :href="'http://www.infobird.com/'" :text="'http://www.infobird.com/'"
                     :inWhiteList="true"></u-link>
             </view>
             <view class="uni-panel" v-for="(item, index) in list" :key="item.id">
@@ -75,7 +75,7 @@
                 // #endif
             ];
 
-            const list = [{
+            const list = [/*{
                     id: 'page',
                     name: '界面',
                     open: false,
@@ -249,13 +249,13 @@
                             url: 'websocket-global'
                         }
                     ]
-                },
+                },*/
                 {
                     id: 'media',
                     name: '媒体',
                     open: false,
                     pages: mediaPages
-                },
+                },/*
                 {
                     id: 'location',
                     name: '位置',
@@ -371,6 +371,7 @@
                     }]
                 }
                 //#endif
+				*/
             ];
             return {
                 showSetTabBarPage: false,
