@@ -1,2 +1,4 @@
 gy_infobird
 aa5626188
+
+包名：com.alian.course
