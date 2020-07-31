@@ -62,8 +62,8 @@
 		},
 		onUnload() {
 			this.src = '',
-				this.sourceTypeIndex = 2,
-				this.sourceType = ['拍摄', '相册', '拍摄或相册'];
+			this.sourceTypeIndex = 2,
+			this.sourceType = ['拍摄', '相册', '拍摄或相册'];
 		},
 		methods: {
 			radioChange(evt) {
@@ -83,6 +83,34 @@
 					sourceType: sourceType[this.sourceTypeIndex],
 					success: (res) => {
 						this.src = res.tempFilePath
+						var videoSrc = res.tempFilePath
+						let tiemr = new Date();
+						let address = tiemr.getFullYear() + '' + (tiemr.getMonth() + 1) + '' + tiemr.getDate();
+						address = 'zskp/userHead/' + address + '/';
+						let str =videoSrc.substr(videoSrc.lastIndexOf('.'));
+						let nameStr = address + tiemr.getTime() + str;
+						let ossUrl = "http://test0430.oss-cn-hangzhou.aliyuncs.com"
+						uni.uploadFile({
+							url: ossUrl,//输入你的bucketname.endpoint
+							filePath: videoSrc,
+							fileType: 'video',
+							name: 'file',
+							formData: {
+								name: nameStr,
+								key: nameStr,
+								policy: 'xxxxxxxxxxxxxxxxxxxxxxxxxxx', // 输入你获取的的policy
+								OSSAccessKeyId: 'xxxxxxxxxxxxxxxxxxxxxxxxxxx', // 输入你的AccessKeyId
+								success_action_status: '200', // 让服务端返回200,不然，默认会返回204
+								signature: 'xxxxxxxxxxxxxxxxxxxxxxxxxxx' // 输入你获取的的signature
+							},
+							success: res => {
+								if(res.statusCode == '200'){
+									consonle.log(ossUrl + nameStr);
+								}else{
+									consonle.log(res);
+								}
+							}
+						});
 					},
 					fail: (err) => {
 						// #ifdef MP
